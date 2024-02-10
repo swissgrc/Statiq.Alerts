@@ -32,9 +32,8 @@ jobs:
         run: git fetch --prune --unshallow
       - uses: actions/setup-dotnet@v4.0.0
         with:
-          # codecov needs 2.1, unittests needs 3.1, gitversion needs 5.0
+          # GitVersion needs 5.0
           dotnet-version: |
-            2.1
             5.0
             6.0
             7.0
@@ -45,13 +44,13 @@ jobs:
           path: tools
           key: ${{ runner.os }}-tools-${{ hashFiles('recipe.cake') }}
       - name: Build project
-        uses: cake-build/cake-action@v1.4.1
+        uses: cake-build/cake-action@v2.0.0
         with:
           script-path: recipe.cake
           target: CI
           cake-version: 1.3.0
       - name: Upload Issues
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v4.3.1
         with:
           if-no-files-found: warn
           name: ${{ matrix.os }} Issues
@@ -59,7 +58,7 @@ jobs:
             BuildArtifacts/report.html
             BuildArtifacts/**/coverlet/*.xml
       - name: Upload Packages
-        uses: actions/upload-artifact@v3.1.3
+        uses: actions/upload-artifact@v4.3.1
         if: runner.os == 'Windows'
         with:
           if-no-files-found: warn
