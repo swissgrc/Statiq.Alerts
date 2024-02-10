@@ -17,7 +17,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert alert-success\" role=\"alert\"><i class=\"fa-solid fa-lightbulb\" aria-hidden=\"true\"></i>&nbsp;<strong>TIP</strong><hr/>Foo</div>",
+                """<div class="alert alert-success" role="alert"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>&nbsp;<strong>TIP</strong><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
     }

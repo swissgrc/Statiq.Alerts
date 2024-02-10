@@ -17,7 +17,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert DefaultAlertClass\" role=\"alert\"><i class=\"fa-solid DefaultAlertIcon\" aria-hidden=\"true\"></i>&nbsp;<strong>DefaultAlertTitle</strong><hr/>Foo</div>",
+                """<div class="alert DefaultAlertClass" role="alert"><i class="fa-solid DefaultAlertIcon" aria-hidden="true"></i>&nbsp;<strong>DefaultAlertTitle</strong><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
 
@@ -40,7 +40,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert CustomClass\" role=\"alert\"><i class=\"fa-solid DefaultAlertIcon\" aria-hidden=\"true\"></i>&nbsp;<strong>DefaultAlertTitle</strong><hr/>Foo</div>",
+                """<div class="alert CustomClass" role="alert"><i class="fa-solid DefaultAlertIcon" aria-hidden="true"></i>&nbsp;<strong>DefaultAlertTitle</strong><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
 
@@ -63,7 +63,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert DefaultAlertClass\" role=\"alert\"><i class=\"fa-solid CustomIcon\" aria-hidden=\"true\"></i>&nbsp;<strong>DefaultAlertTitle</strong><hr/>Foo</div>",
+                """<div class="alert DefaultAlertClass" role="alert"><i class="fa-solid CustomIcon" aria-hidden="true"></i>&nbsp;<strong>DefaultAlertTitle</strong><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
 
@@ -89,7 +89,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert DefaultAlertClass\" role=\"alert\"><strong>DefaultAlertTitle</strong><hr/>Foo</div>",
+                """<div class="alert DefaultAlertClass" role="alert"><strong>DefaultAlertTitle</strong><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
 
@@ -112,7 +112,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert DefaultAlertClass\" role=\"alert\"><i class=\"fa-solid DefaultAlertIcon\" aria-hidden=\"true\"></i>&nbsp;<strong>CustomTitle</strong><hr/>Foo</div>",
+                """<div class="alert DefaultAlertClass" role="alert"><i class="fa-solid DefaultAlertIcon" aria-hidden="true"></i>&nbsp;<strong>CustomTitle</strong><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
 
@@ -138,7 +138,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert DefaultAlertClass\" role=\"alert\"><i class=\"fa-solid DefaultAlertIcon\" aria-hidden=\"true\"></i><hr/>Foo</div>",
+                """<div class="alert DefaultAlertClass" role="alert"><i class="fa-solid DefaultAlertIcon" aria-hidden="true"></i><hr/>Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
 
@@ -165,7 +165,7 @@ namespace Statiq.Alerts.Tests
 
             // Then
             result.ContentProvider.GetStream().ReadToEnd().ShouldBe(
-                "<div class=\"alert DefaultAlertClass\" role=\"alert\">Foo</div>",
+                """<div class="alert DefaultAlertClass" role="alert">Foo</div>""",
                 StringCompareShould.IgnoreLineEndings);
         }
     }
