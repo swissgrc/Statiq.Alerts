@@ -12,10 +12,13 @@
     /// </example>
     public class NoteShortcode : AlertShortcode
     {
+        /// <inheritdoc/>
         protected override string DefaultAlertClass => "alert-primary";
 
+        /// <inheritdoc/>
         protected override string DefaultAlertIcon => "fa-pen-to-square";
 
+        /// <inheritdoc/>
         protected override string DefaultAlertTitle => "NOTE";
     }
 }

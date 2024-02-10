@@ -12,10 +12,13 @@
     /// </example>
     public class ImportantShortcode : AlertShortcode
     {
+        /// <inheritdoc/>
         protected override string DefaultAlertClass => "alert-danger";
 
+        /// <inheritdoc/>
         protected override string DefaultAlertIcon => "fa-triangle-exclamation";
 
+        /// <inheritdoc/>
         protected override string DefaultAlertTitle => "IMPORTANT";
     }
 }
