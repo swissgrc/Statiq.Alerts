@@ -1,8 +1,5 @@
 namespace Statiq.Alerts.Tests
 {
-    using Shouldly;
-    using Statiq.Testing;
-
     public class WarningShortcodeTests
     {
         [Fact]
