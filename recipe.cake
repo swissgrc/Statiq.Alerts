@@ -12,6 +12,7 @@ BuildParameters.SetParameters(
     repositoryName: "Statiq.Alerts",
     shouldRunDotNetCorePack: true,
     shouldUseDeterministicBuilds: true,
+    shouldGenerateDocumentation: false, // docs folder does not contain a Wyam project
     preferredBuildProviderType: BuildProviderType.GitHubActions,
     preferredBuildAgentOperatingSystem: PlatformFamily.Linux);
 
