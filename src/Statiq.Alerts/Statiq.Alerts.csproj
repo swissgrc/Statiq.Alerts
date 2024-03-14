@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Properties for NuGet package -->
+  <PropertyGroup>
+    <StartYear>2023</StartYear>
+    <EndYear>$([System.DateTime]::Today.Year)</EndYear>
+    <FullYear Condition="'$(StartYear)'=='$(EndYear)'">$(StartYear)</FullYear>
+    <FullYear Condition="'$(StartYear)'!='$(EndYear)'">$(StartYear)-$(EndYear)</FullYear>
+
+    <Title>Statiq.Alerts</Title>
+    <Description>Extension for Statiq site generator to add alerts.</Description>
+    <Authors>Swiss GRC AG</Authors>
+    <Copyright>Copyright © $(FullYear) Swiss GRC AG</Copyright>
+    <PackageTags>statiq alerts bootstrap</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/swissgrc/Statiq.Alerts</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/swissgrc/Statiq.Alerts.git</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/swissgrc/Statiq.Alerts/releases/tag/$(Version)</PackageReleaseNotes>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="icon.png" Pack="true" PackagePath="\" />
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Statiq.Web" Version="[1.0.0-beta.60, )" NoWarn="NU5104"/>
+  </ItemGroup>
+
+</Project>
