@@ -39,7 +39,7 @@ This is a tip
 
 Shows a tip alert:
 
-![Tip alert](docs/tip.png)
+![Tip alert](https://media.githubusercontent.com/media/swissgrc/Statiq.Alerts/develop/docs/tip.png)
 
 ### Info
 
@@ -51,7 +51,7 @@ This is an info message
 
 Shows an info message:
 
-![Info alert](docs/info.png)
+![Info alert](https://media.githubusercontent.com/media/swissgrc/Statiq.Alerts/develop/docs/info.png)
 
 ### Note
 
@@ -63,7 +63,7 @@ This is a note
 
 Shows a note:
 
-![Note alert](docs/note.png)
+![Note alert](https://media.githubusercontent.com/media/swissgrc/Statiq.Alerts/develop/docs/note.png)
 
 ### Warning
 
@@ -75,7 +75,7 @@ This is a warning
 
 Shows a warning:
 
-![Warning alert](docs/warning.png)
+![Warning alert](https://media.githubusercontent.com/media/swissgrc/Statiq.Alerts/develop/docs/warning.png)
 
 ### Important
 
@@ -87,7 +87,7 @@ This is an important message
 
 Shows an important message:
 
-![Important alert](docs/important.png)
+![Important alert](https://media.githubusercontent.com/media/swissgrc/Statiq.Alerts/develop/docs/important.png)
 
 ## API
 
