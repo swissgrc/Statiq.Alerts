@@ -133,7 +133,7 @@ The `fa-solid` class will always be set.
 To remove the icon the `Icon` parameter can be set to an empty string:
 
 ```markdown
-<?# Note Iocn=""?>
+<?# Note Icon=""?>
 This is a note without an icon
 <?#/ Note ?>
 ```
