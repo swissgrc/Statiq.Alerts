@@ -120,7 +120,7 @@ The `alert` class will always be set.
 The `Icon` parameters allows to override the icon of the alert:
 
 ```markdown
-<?# Note Title="fa-check"?>
+<?# Note Icon="fa-check"?>
 This is a note with a different icon
 <?#/ Note ?>
 ```
