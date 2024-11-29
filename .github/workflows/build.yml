@@ -40,6 +40,7 @@ jobs:
             6.0
             7.0
             8.0
+            9.0
       - name: Cache Tools
         uses: actions/cache@6849a6489940f00c2f30c0fb92c6274307ccb58a # v4.1.2
         with:
